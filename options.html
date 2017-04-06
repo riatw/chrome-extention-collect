@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div id="wrap">
+		<div class="m-box-login">
+			<h1>Collect Login</h1>
+			<p class="login-message">
+				Collectにサイトをクリップするためにはログインが必要です。<br>
+				collectのユーザ名、パスワードを入力してください。
+			</p>
+
+			<div class="m-box-status status-success" data-auth-status data-auth-status-success>
+				認証に成功しました
+			</div>
+
+			<div class="m-box-status status-error" data-auth-status data-auth-status-error>
+				認証に失敗しました
+			</div>
+
+			<form data-auth-input>
+				<ul class="m-list-form">
+					<li><input type="text" name="username" placeholder="username"></li>
+					<li><input type="password" name="password" placeholder="password"></li>
+					<li><input type="url" name="url" placeholder="url（https://yourdomain/cms/mt-data-api.fcgi）"></li>
+					<li><input type="site_id" name="site_id" placeholder="site_id(default: 3)"></li>
+					<li><button type="submit">Save</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/data-api/v3/js/mt-data-api.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>
